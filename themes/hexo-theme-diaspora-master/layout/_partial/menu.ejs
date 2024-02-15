@@ -1,0 +1,50 @@
+<div class="nav">
+    <ul id="menu-menu" class="menu">
+        <% for (var i in theme.menu){ %>
+        <li class="<%- theme.menu[i].indexOf('http') > -1 ? " " : "pview" %> menu-item menu-item-type-post_type menu-item-object-page">
+            <%- link_to(theme.menu[i].lastIndexOf('/') > 0 ? theme.menu[i] : theme.menu[i] + '/', i, {external: true})%>
+        </li>
+        <%}%>
+    </ul>
+	<span class="target"></span>
+	<center>
+	<div class="hitokoto">
+		
+            <a href="/delok">
+                <img src="/img/nandelok.png" class="imgg" />
+            </a>
+		
+		
+		<input type="text" class="form-control" id="zito" placeholder="文本框">
+		<div class="iconfont au-search " id="submit"></div>
+		<span class="typed" id="sikan" ></span>
+		
+		
+		
+		<!--
+		<button type="submit"></button>
+		<div class="iconfont au-search " href="/search/" title="搜索"></div>
+		<span class="typed" id="hitokoto" data-st="<%=theme.hitokoto%>"></span>
+		-->
+	</div>
+	</center>
+	
+	<p class="footerlinks">
+	
+	<a class="nanfont">❀ papana endi fosenhasa ❀</a>
+	<!--
+		<a href="#" class="iconfont icon-null"></a>
+		<% for (var i in theme.links){ %>
+            <%- link_to(theme.links[i],' ',{external: true ,class: 'iconfont icon-'+i,title:i})%>
+        <%}%>
+		<a href="#" class="iconfont icon-null"></a>
+			-->
+	</p>
+	
+    <p id="copyright">
+        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>.
+        <span> | </span>Powered by <%- link_to("https://hexo.io/", "Hexo", {external: true})%>
+        <span> | </span>Theme <%- link_to("https://github.com/Fechin/hexo-theme-diaspora", "Diaspora", {external: true})%> by Fechin
+		<span> | </span><a href="https://icp.gov.moe/?keyword=20220343" target="_blank">萌ICP备20220343号</a>
+    </p>
+</div>

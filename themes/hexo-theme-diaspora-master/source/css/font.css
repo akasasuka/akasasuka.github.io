@@ -1,0 +1,40 @@
+@font-face{
+	font-family:'wnanmun';
+	src:url('../fonts/nanmun.ttf') format('truetype');
+}
+@font-face{
+	font-family:'wFLOWERS';
+	src:url('../fonts/FLOWERS.ttf') format('truetype');
+}
+@font-face{
+	font-family:'wHGGyoshotai';
+	src:url('../fonts/HGGyoshotai.otf') format('OpenType');
+}
+@font-face{
+	font-family:'wburguesscript';
+	src:url('../fonts/burguesscript.otf') format('OpenType');
+}
+@font-face{
+	font-family:'war-ciela';
+	src:url('../fonts/ar-ciela.ttf') format('truetype');
+}
+@font-face{
+	font-family:'whymmnos';
+	src:url('../fonts/hymmnos.ttf') format('truetype');
+}
+@font-face{
+	font-family:'wBreitkopf_Fraktur';
+	src:url('../fonts/Breitkopf_Fraktur.ttf') format('truetype');
+}
+@font-face{
+	font-family:'wNanflowers';
+	src:url('../fonts/Nanflowers.ttf') format('truetype');
+}
+.cnanmun{font-family:'wnanmun';}
+.cFLOWERS{font-family:'wFLOWERS';}
+.cHGGyoshotai{font-family:'wHGGyoshotai';}
+.cburguesscript{font-family:'wburguesscript';}
+.car-ciela{font-family:'war-ciela';}
+.chymmnos{font-family:'whymmnos';}
+.cBreitkopf_Fraktur{font-family:'wBreitkopf_Fraktur';}
+.cNanflowers{font-family:'wNanflowers';}

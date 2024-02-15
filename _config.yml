@@ -4,7 +4,7 @@
 
 # Site
 
-title: 厄尔科斯
+title: muu hasa
 subtitle: ''
 description: ''
 keywords:
@@ -104,7 +104,7 @@ search:
 
   # https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-butterfly-dev #hexo-theme-diaspora-master #butterfly #
+theme: hexo-theme-diaspora-master #butterfly #
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -112,3 +112,20 @@ deploy:
   type: git
   repository: https://github.com/akasasuka/akasasuka.github.io
   branch: main
+
+artitalk:
+  enable: true
+  title: aoi ## 标题
+  path: index.html ## 生成路径
+  pageSize: 999 ## 显示几条说说
+  avatar: '/img/akas.png' ## 说说头像
+  plugins: ['artitalk_plugins/markdown.js'] ## 插件，具体请看下文
+  template: 'artitalk_plugins/main.ejs' ## 说说模板，可查看仓库中的 main.ejs
+  imports: ## 在说说模板的开头和结尾处插入内容
+    before:
+      - 
+    after:
+      - #'<style>.at_avatar{src: "/img/akas.png"}</style>'
+    # - <link rel="stylesheet" href="/css/index.css">
+    # - '<style>body{color: red}</style>' ## 注意由于css的‘{}’是关键符号所以需要(单/双)引号''
+    # - <script>alert(1)</script>
