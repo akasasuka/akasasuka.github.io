@@ -40,7 +40,7 @@
     --at-color: #ff9e77;
   }
   .at_content {
-    white-space: normal;
+    white-space: pre-line;
   }
   .at_time {
     margin-top: 10px;
@@ -95,7 +95,7 @@
 <div id="at_main">
   <ul class="at_items">
     <% artitalk.forEach(item => { %>
-    <% var tia = new Date(item.timestamp) %>
+    <% var tia = (isNaN(item.timestamp) ? new Date() : new Date(item.timestamp)) %>
     <li class="at_item">
       <img class="at_avatar" alt="avatar" />
       <div class="at_content_container">
