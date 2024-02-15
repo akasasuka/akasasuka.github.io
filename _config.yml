@@ -14,7 +14,7 @@ timezone: 'Japan'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://akas.github.io
+url: https://akasasuka.github.io
 permalink: :title/ # :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,7 +104,7 @@ search:
 
   # https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly #hexo-theme-butterfly-dev #hexo-theme-diaspora-master 
+theme: hexo-theme-butterfly-dev #hexo-theme-diaspora-master #butterfly #
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
