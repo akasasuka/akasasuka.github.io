@@ -14,7 +14,7 @@ timezone: 'Japan'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://sikan.moe
+url: https://akas.github.io
 permalink: :title/ # :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -100,24 +100,6 @@ search:
   format: html
   limit: 10000
 # Extensions
-Plugins: 
-  - hexo-algoliasearch
-algolia:
-  applicationID: ZEZP7DUK02
-  apiKey: 5b30b867499f6d6b7edf693836a6b3bd
-  adminApiKey: 4fa79cda10818f121ad5e25ef3b91455
-  chunkSize: 5000
-  indexName: "hexo"
-  fields:
-    - content:strip:truncate,0,500
-    - excerpt:strip
-    - gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - title
-
 
 
   # https://hexo.io/plugins/
@@ -127,4 +109,6 @@ theme: butterfly #hexo-theme-butterfly-dev #hexo-theme-diaspora-master
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/akasasuka/akas.github.io.git
+  branch: main
