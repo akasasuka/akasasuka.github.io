@@ -90,7 +90,7 @@
     }
   }
 </style>
-<% const sueseo = '花咲季    ~hasawa~' ; function reNului(loi,lni,lui){ let loihensa = Math.abs(loi-2015);let lnihensa = parseInt(loihensa/4); let tlui=loihensa*365+lnihensa+[0,31,59,90,120,151,181,212,243,273,304,334][lni]+parseInt(lui)-1; let reloi=2030+parseInt(tlui/360); let relni=parseInt(tlui/30)%12; let relui=(tlui+1)%30;if(relui==0){relui=30;} let relniba=parseInt(tlui/30)%7; let resazr=((relui-1)+2*relniba)%7; return ""+reloi+"年"+(relni+1)+"月"+relui+"日  月种："+['tue','lei','zei','klo','liu','neu','fba'][relniba]+"  "+['星期日 ~wanma sazr~','星期一 ~foia sazr~','星期二 ~hasa sazr~','星期三 ~kasa sazr~','星期四 ~qinesa sazr~','星期五 ~snLialia sazr~','星期六 ~lisrli sazr~'][resazr]; } %>
+<% const sueseo = '花咲季    ~hasawa~' ; function reNului(loi,lni,lui){ let loihensa = Math.abs(loi-2015);let lnihensa = parseInt(loihensa/4); let tlui=loihensa*365+lnihensa+[0,31,59,90,120,151,181,212,243,273,304,334][lni]+parseInt(lui)-1; let reloi=2030+parseInt(tlui/360); let relni=parseInt(tlui/30)%12+1; let relui=((_i=(tlui+1)%30)?_i:30); let relniba=parseInt(tlui/30)%7; let resazr=((relui-1)+2*relniba)%7; return ""+reloi+"年"+relni+"月"+relui+"日  月种："+['tue','lei','zei','klo','liu','neu','fba'][relniba]+"  "+['星期日 ~wanma sazr~','星期一 ~foia sazr~','星期二 ~hasa sazr~','星期三 ~kasa sazr~','星期四 ~qinesa sazr~','星期五 ~snLialia sazr~','星期六 ~lisrli sazr~'][resazr]; } %>
 <% const items = artitalk.splice(data.pageSize) %>
 <div id="at_main">
   <ul class="at_items">
